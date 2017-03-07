@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+android:orientation="vertical"
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:layout_weight="1">
+		<Button 
+			android:id="@+id/btnAutoTest"
+			android:layout_width="0dip"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:textColor="#0000FF">
+		</Button>
+	</LinearLayout>
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:layout_weight="1">
+		<Button 
+		android:id="@+id/btnVibrate"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnLcd"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnTouchScreen"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+	</LinearLayout>
+
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:layout_weight="1">
+		<Button 
+		android:id="@+id/btnKeystroke"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnSensors" 
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnSensorsCheck" 
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+	</LinearLayout>
+	
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:layout_weight="1">
+		<Button 
+		android:id="@+id/btnIndicator"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnKeylight"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnBacklight" 
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+	</LinearLayout>
+
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:layout_weight="1">
+		<Button 
+		android:id="@+id/btnSDcard"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnAudio"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+		<Button 
+		android:id="@+id/btnCamera"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+		</Button>
+	</LinearLayout>
+	
+
+</LinearLayout>

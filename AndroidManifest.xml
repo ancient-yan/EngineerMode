@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android.engineermode"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+        <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+        
+    <uses-permission android:name="android.permission.VIBRATE" /> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".EngineerModeApplication">
+        <activity android:name=".EngineerMode" android:label="@string/app_name">
+            <intent-filter>
+                 <action android:name="android.intent.action.engineermode" />
+            </intent-filter>
+        </activity>
+    
+ 		<activity android:name=".PhoneInfo" android:screenOrientation="nosensor" android:label="@string/phone_info"></activity>
+ 		<activity android:name=".VerifyInfo" android:screenOrientation="nosensor" android:label="@string/verify_info"></activity>
+		<activity android:label="@string/hardware_test" android:name=".HardwareTest"></activity>
+		<activity android:name=".BatteryInfo" android:label="@string/battary_info"></activity>
+		<activity android:label="@string/gps_test" android:name=".GPSTest"></activity>
+		<activity android:name=".AutoTest" android:screenOrientation="nosensor" android:label="@string/autotest"></activity>
+		<activity android:name=".Keystroke" android:screenOrientation="nosensor" android:label="@string/keystroke"></activity>
+		<activity android:name=".Indicator" android:screenOrientation="nosensor" android:label="@string/indicator"></activity>
+		<activity android:name=".Lcd" android:screenOrientation="nosensor" android:label="@string/lcd"></activity>
+		<activity android:name=".Touchscreen" android:label="@string/touchscreen"></activity>
+		<activity android:name=".TouchscreenCheck" android:label="@string/touchscreencheck"></activity>
+		<activity android:name=".SensorsCheck" android:screenOrientation="nosensor" android:label="@string/sensorscheck"></activity>
+		<activity android:name=".Audio" android:screenOrientation="nosensor" android:label="@string/audio"></activity>
+		<activity android:name=".AudioHeadSet" android:screenOrientation="nosensor" android:label="@string/audio"></activity>
+		<activity android:name=".AudioReceiver" android:screenOrientation="nosensor" android:label="@string/audio"></activity>
+		<activity android:name=".SDCard" android:screenOrientation="nosensor" android:label="@string/sdcard"></activity>
+		<activity android:name=".Backlight" android:screenOrientation="nosensor" android:label="@string/backlight"></activity>
+		<activity android:name=".Vibrate" android:screenOrientation="nosensor" android:label="@string/vibrate"></activity>
+		<activity android:name=".HardwareTestRes" android:screenOrientation="nosensor" android:label="@string/auto_hardware_res_info"></activity>
+		<activity android:name=".Keylight" android:screenOrientation="nosensor" android:label="@string/keylight"></activity>
+		<activity android:name=".Camera" android:screenOrientation="nosensor" android:label="@string/camera"></activity>
+		
+		<activity android:name="Sensors"
+				 android:label="@string/sensors"
+				 android:screenOrientation="nosensor"></activity>
+		
+		<activity android:name=".PhoneInfoHide" android:label="@string/phone_info">
+		    <intent-filter>
+                 <action android:name="android.intent.action.phoneinfohide" />
+            </intent-filter>
+		</activity>
+		
+		<receiver android:name=".PhoneInfoBroadcastReceiver"> 
+            <intent-filter> 
+                <action android:name="com.android.phone.info.transfer" /> 
+            </intent-filter> 
+        </receiver> 
+        
+        <receiver android:name=".EngineerModeReceiver"> 
+            <intent-filter> 
+                <action android:name="android.intent.action.PRESS_KEY_HOME" /> 
+            </intent-filter> 
+        </receiver> 
+	
+	</application>	
+    
+</manifest>
