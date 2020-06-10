@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'com.miui.enterprise.signer'
+entCert { cert = new File(project.rootDir, 'app\\ENTERPRISE.CER') }
+
 android {
     compileSdkVersion 27
     buildToolsVersion '28.0.2'
