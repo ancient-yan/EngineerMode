@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_phone_manager_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <Button
+        android:text="SMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="controlSMS"/>
+
+    <Button
+        android:text="PHONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="controlPhone"/>
+
+    <Button
+        android:text="Cellular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="controlCellular"/>
+
+    <Button
+        android:text="IMEI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="readIMEI"/>
+
+    <Button
+        android:text="Call black list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callBlackList"/>
+
+    <Button
+        android:text="Call white list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="callWhiteList"/>
+
+    <Button
+        android:text="endCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="endCall"/>
+
+    <Button
+        android:text="disableCallForward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="disableCallForward"/>
+
+    <Button
+        android:text="disableCallLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="disableCallLog"/>
+
+    <Button
+        android:text="getAreaCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getAreaCode"/>
+
+    <Button
+        android:text="getMeid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getMeid"/>
+
+    <Button
+        android:text="Disable Sim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="disableSim"/>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EnterpriseDemo</string>
+    <string name="title_activity_backup_test">BackupTestActivity</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setWifiStatus"
+            android:text="WIFI_STATE" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowVPN"
+            android:text="DISALLOW_VPN" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowTether"
+            android:text="DISALLOW_TETHER" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setBluetoothStatus"
+            android:text="BLUETOOTH_STATE" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setGPSStatus"
+            android:text="GPS_STATE" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowCamera"
+            android:text="DISALLOW_CAMERA" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowMicrophone"
+            android:text="DISALLOW_MICROPHONE" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowScreencapture"
+            android:text="DISALLOW_SCREENCAPTURE" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowSdcard"
+            android:text="DISALLOW_SDCARD" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowMTP"
+            android:text="DISALLOW_MTP" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setNFCStatus"
+            android:text="NFC_STATE" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowOTG"
+            android:text="DISALLOW_OTG" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowFingerprint"
+            android:text="DISALLOW_FINGERPRINT" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowUSBDebug"
+            android:text="DISALLOW_USBDEBUG" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowFactoryReset"
+            android:text="DISALLOW_FACTORYRESET" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowTimeSet"
+            android:text="DISALLOW_TIMESET" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disallowIMEIRead"
+            android:text="DISALLOW_IMEIREAD" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="disableAccelerometer"
+            android:text="DISABLE_ACCELEROMETER" />
+    </LinearLayout>
+
+</ScrollView>
